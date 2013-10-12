@@ -9,7 +9,7 @@ import org.pircbotx.exception.IrcException;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-public class R3Bot {
+public class DynaBot {
 
     public static PircBotX bot = new PircBotX();
     public final static Logger logger = Logger.getLogger("R3Bot");
@@ -17,10 +17,10 @@ public class R3Bot {
     public static void main(String args[]) {
 
         bot.setAutoNickChange(true);
-        bot.setVersion("R3's IRC bot");
-        bot.setLogin("R3Bot");
-        bot.setName("R3Bot");
-        bot.identify("pwd2logon");
+        bot.setVersion("Dyna IRC bot");
+        bot.setLogin("DynaBot");
+        bot.setName("DynaBot");
+        bot.identify("BADBOY2000");
         bot.setVerbose(true);
         try {
             bot.connect("irc.freenode.net", 6667);
