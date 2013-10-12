@@ -1,8 +1,8 @@
-R3Bot
+DynaBot
 =====
 
-Terrible and sassy IRC bot that talks to you 
+A modified version of R3creat3's R3Bot.
 
-### R3Bot
+### DynaBot
 
-Don't challenge it to an argument, it will beat you!
+Very annoying, even capable of winning an argument against Siel!
