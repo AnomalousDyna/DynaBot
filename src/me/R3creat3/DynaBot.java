@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class DynaBot {
 
     public static PircBotX bot = new PircBotX();
-    public final static Logger logger = Logger.getLogger("R3Bot");
+    public final static Logger logger = Logger.getLogger("DynaBot");
 
     public static void main(String args[]) {
 
@@ -31,7 +31,7 @@ public class DynaBot {
         bot.setMessageDelay(1000);
         bot.setAutoReconnect(true);
         bot.setAutoReconnectChannels(true);
-        bot.joinChannel("#R3creat3");
+        bot.joinChannel("#Dyna");
 
         bot.getListenerManager().addListener(new JoinCommand());
         bot.getListenerManager().addListener(new PartCommand());
