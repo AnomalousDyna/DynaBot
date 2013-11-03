@@ -29,8 +29,8 @@ public class CleverBot extends ListenerAdapter {
             outsay += ArrSay[i];
 
         }
-        if (event.getMessage().startsWith(R3Bot.bot.getNick() + ": ") ||
-                event.getMessage().startsWith(R3Bot.bot.getNick() + ", ")) {
+        if (event.getMessage().startsWith(DynaBot.bot.getNick() + ": ") ||
+                event.getMessage().startsWith(DynaBot.bot.getNick() + ", ")) {
             try {
                 String s = botsession.think(outsay);
                 event.respond(s);
