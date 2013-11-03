@@ -1,6 +1,6 @@
 package me.R3creat3.commands;
 
-import me.R3creat3.R3Bot;
+import me.R3creat3.DynaBot;
 import org.pircbotx.hooks.ListenerAdapter;
 import org.pircbotx.hooks.events.MessageEvent;
 
@@ -12,7 +12,7 @@ public class PartCommand extends ListenerAdapter {
 
             String channel = event.getMessage().split(" ")[1];
             if (event.getMessage().startsWith("`part ") && event.getMessage().contains(channel)) {
-                if (event.getUser().getNick().equals("R3creat3")) {
+                if (event.getUser().getNick().equals("DynaBot")) {
 
                     event.respond("OK! Will leave channel " + channel + "!");
                     R3Bot.bot.sendRawLineNow("part" + " " + channel);
