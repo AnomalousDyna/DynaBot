@@ -1,6 +1,6 @@
 package me.R3creat3.commands;
 
-import me.R3creat3.R3Bot;
+import me.R3creat3.DynaBot;
 import org.pircbotx.hooks.ListenerAdapter;
 import org.pircbotx.hooks.events.MessageEvent;
 
@@ -10,7 +10,7 @@ public class SayCommand extends ListenerAdapter {
     public void onMessage(MessageEvent event) {
         if (event.getMessage().split(" ").length > 1) {
 
-            if (event.getUser().getNick().equals("R3creat3")) {
+            if (event.getUser().getNick().equals("Dyna")) {
 
                 String message = event.getMessage();
                 String channel = event.getMessage().split(" ")[1];
@@ -30,7 +30,7 @@ public class SayCommand extends ListenerAdapter {
                         }
                     }
 
-                    R3Bot.bot.sendMessage(channel, outsay);
+                    DynaBot.bot.sendMessage(channel, outsay);
 
                 }
             }
