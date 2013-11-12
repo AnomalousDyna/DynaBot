@@ -35,7 +35,7 @@ public class CleverBot extends ListenerAdapter {
                 String s = botsession.think(outsay);
                 event.respond(s);
             } catch (Exception e) {
-                event.respond("Sorry, there was an error thinking about your statement, try again later.");
+                event.respond("There was an error thinking about your statement.");
             }
 
         }
